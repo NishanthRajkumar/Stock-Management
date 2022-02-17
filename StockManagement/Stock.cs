@@ -22,7 +22,7 @@ internal class Stock
         this.stockName = stockName;
         this.noOfShares = noOfShares;
         this.sharePrice = sharePrice;
-        stockValue = (double)noOfShares * sharePrice;
+        UpdateStockValue();
     }
 
     public void UpdateStockValue()
@@ -33,7 +33,7 @@ internal class Stock
     public void AddShares(int noOfShares)
     {
         this.noOfShares += noOfShares;
-        stockValue = sharePrice * (double)this.noOfShares;
+        UpdateStockValue();
     }
 
     public void Display()
