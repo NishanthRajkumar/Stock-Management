@@ -1,2 +1,5 @@
-﻿Console.Title = "Stock Management App";
-Console.WriteLine("Hello, World!");
+﻿using StockManagement;
+
+Console.Title = "Stock Management App";
+
+Menu.List();
