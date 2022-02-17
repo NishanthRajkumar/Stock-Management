@@ -3,12 +3,15 @@
 internal class StockPortfolio
 {
     private readonly Dictionary<string, Stock> stocks;
-    private double totalStockValue;
+
+    public double TotalValue
+    {
+        get { return ComputeTotalValue(); }
+    }
 
     public StockPortfolio()
     {
         stocks = new();
-        totalStockValue = 0;
     }
 
     public void AddStock()
@@ -44,17 +47,37 @@ internal class StockPortfolio
             Console.WriteLine("Stock does not exist in your portfolio!");
     }
 
-    public void DisplayAll()
+    public void PortfolioReport()
     {
         foreach (Stock stock in stocks.Values)
             stock.Display();
     }
 
-    public void ComputeTotalValue()
+    private double ComputeTotalValue()
     {
-        totalStockValue = 0;
+        double totalStockValue = 0;
         foreach (Stock stock in stocks.Values)
             totalStockValue += stock.StockValue;
-        Console.WriteLine("Total Stock Value: " + totalStockValue);
+        return totalStockValue;
+    }
+
+    public double ValueOf()
+    {
+        return TotalValue;
+    }
+
+    private void Save()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void Sell()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void Buy()
+    {
+        throw new NotImplementedException();
     }
 }

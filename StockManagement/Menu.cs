@@ -27,13 +27,13 @@ internal static class Menu
                     myPortfolio.AddMultipleStocks();
                     break;
                 case 3:
-                    myPortfolio.ComputeTotalValue();
+                    Console.WriteLine("Total Value of portflolio: " + myPortfolio.TotalValue);
                     break;
                 case 4:
                     myPortfolio.DisplayStock();
                     break;
                 case 5:
-                    myPortfolio.DisplayAll();
+                    myPortfolio.PortfolioReport();
                     break;
                 case 6:
                     Console.WriteLine();
