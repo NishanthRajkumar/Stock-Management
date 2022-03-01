@@ -11,4 +11,8 @@
     <Folder Include="Accounts\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MyDataStructureLibrary\MyDataStructureLibrary.csproj" />
+  </ItemGroup>
+
 </Project>

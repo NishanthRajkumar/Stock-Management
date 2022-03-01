@@ -1,0 +1,30 @@
+1/03/2022 3:13:18 PM: Nish initiates buy
+1/03/2022 3:13:18 PM: Bought 29 shares of KO and added to Nish's account
+1/03/2022 3:14:05 PM: Jeffy initiates buy
+1/03/2022 3:14:05 PM: Bought 21 shares of TSLA and added to Jeffy's account
+1/03/2022 3:14:55 PM: Finance institute initiates sale for Austen's account
+1/03/2022 3:14:55 PM: Sold 100 shares of INFY from Austen's account
+1/03/2022 3:15:02 PM: Finance institute initiates buy for Austen's account
+1/03/2022 3:15:02 PM: Bought 30 shares of FB and added to Austen's account
+1/03/2022 3:19:36 PM: Blessy initiates sale
+1/03/2022 3:19:36 PM: Transaction Failed
+1/03/2022 3:21:17 PM: Blessy initiates sale
+1/03/2022 3:21:18 PM: Transaction Failed
+1/03/2022 3:24:24 PM: Blessy initiates sale
+1/03/2022 3:24:24 PM: Transaction Failed
+1/03/2022 3:24:35 PM: Blessy initiates sale
+1/03/2022 3:24:35 PM: Sold 8 shares of AAPL from Blessy's account
+1/03/2022 3:24:45 PM: Blessy initiates buy
+1/03/2022 3:24:45 PM: Bought 10 shares of NVDA and added to Blessy's account
+1/03/2022 3:26:01 PM: Finance institute initiates sale for Austen's account
+1/03/2022 3:26:01 PM: Sold 50 shares of INFY from Austen's account
+1/03/2022 3:26:37 PM: Finance institute initiates buy for Austen's account
+1/03/2022 3:26:37 PM: Bought 30 shares of AMZN and added to Austen's account
+1/03/2022 3:27:11 PM: Finance institute initiates buy for Austen's account
+1/03/2022 3:27:11 PM: Transaction Failed
+1/03/2022 3:27:25 PM: Finance institute initiates buy for Austen's account
+1/03/2022 3:27:25 PM: Bought 7 shares of GOOG and added to Austen's account
+1/03/2022 3:29:25 PM: Finance institute initiates sale for Blessy's account
+1/03/2022 3:29:25 PM: Sold 189 shares of TSLA from Blessy's account
+1/03/2022 3:31:30 PM: Finance institute initiates sale for Jeffy's account
+1/03/2022 3:31:30 PM: Sold 277 shares of TT from Jeffy's account

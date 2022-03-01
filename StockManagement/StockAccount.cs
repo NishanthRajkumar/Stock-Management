@@ -37,6 +37,7 @@ public class StockAccount
     /// <param name="Symbol">The symbol of the stock</param>
     public void Buy(int amount, string Symbol)
     {
+        TransactionLog.EnterLog($"Finance institute initiates buy for {fileName}'s account");
         portfolio.AddShares(amount, Symbol);
     }
 
@@ -47,6 +48,7 @@ public class StockAccount
     /// <param name="Symbol">The symbol of the stock</param>
     public void Sell(int amount, string Symbol)
     {
+        TransactionLog.EnterLog($"Finance institute initiates sale for {fileName}'s account");
         portfolio.RemoveShares(amount, Symbol);
     }
 

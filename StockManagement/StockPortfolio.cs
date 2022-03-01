@@ -37,6 +37,7 @@ public class StockPortfolio
     {
         string Symbol = UserInput.GetName("Enter Symbol of stock to Buy: ");
         int amount = UserInput.GetPositiveInt("Enter amount of shares: ");
+        TransactionLog.EnterLog($"{AccountName} initiates buy");
         AddShares(amount, Symbol);
     }
 
@@ -47,6 +48,7 @@ public class StockPortfolio
     {
         string Symbol = UserInput.GetName("Enter Symbol of stock to Sell: ");
         int amount = UserInput.GetPositiveInt("Enter amount of shares: ");
+        TransactionLog.EnterLog($"{AccountName} initiates sale");
         RemoveShares(amount, Symbol);
     }
 
@@ -97,57 +99,66 @@ public class StockPortfolio
     /// <summary>
     /// Adds the shares to the portfolio
     /// </summary>
-    public void AddShares(int amount, string Symbol)
+    public void AddShares(int amount, string symbol)
     {
-        if (CompanyList.companyList.ContainsKey(Symbol) is false)
+        if (CompanyList.companyList.ContainsKey(symbol) is false)
         {
             Console.WriteLine("Symbol Does not exist!");
+            TransactionLog.EnterLog("Transaction Failed");
             return;
         }
-        if (amount > CompanyList.companyList[Symbol].NoOfShares)
+        if (amount > CompanyList.companyList[symbol].NoOfShares)
         {
             Console.WriteLine("Amount exceeds the company share count!\n Failed To buy");
+            TransactionLog.EnterLog("Transaction Failed");
             return;
         }
-        CompanyList.companyList[Symbol].NoOfShares -= amount;
-        if (Stocks.ContainsKey(Symbol))
-            Stocks[Symbol].NoOfShares += amount;
+        CompanyList.companyList[symbol].NoOfShares -= amount;
+        if (Stocks.ContainsKey(symbol))
+            Stocks[symbol].NoOfShares += amount;
         else
         {
             Stock stock = new()
             {
                 NoOfShares = amount,
-                StockSymbol = Symbol,
-                StockName = CompanyList.companyList[Symbol].Name
+                StockSymbol = symbol,
+                StockName = CompanyList.companyList[symbol].Name
             };
-            Stocks.Add(Symbol, stock);
+            Stocks.Add(symbol, stock);
         }
         Console.WriteLine("Bought Successfully!");
+        TransactionLog.EnterLog($"Bought {amount} shares of {symbol} and added to {AccountName}'s account");
     }
 
     /// <summary>
     /// Removes the shares from the portfolio
     /// </summary>
-    public void RemoveShares(int amount, string Symbol)
+    public void RemoveShares(int amount, string symbol)
     {
-        if (CompanyList.companyList.ContainsKey(Symbol) is false)
+        if (CompanyList.companyList.ContainsKey(symbol) is false)
         {
             Console.WriteLine("Symbol Does not exist!");
+            TransactionLog.EnterLog("Transaction Failed");
             return;
         }
-        if (Stocks.ContainsKey(Symbol))
+        if (Stocks.ContainsKey(symbol))
         {
-            if (amount > Stocks[Symbol].NoOfShares)
+            if (amount > Stocks[symbol].NoOfShares)
             {
                 Console.WriteLine("Amount exceeds the share count in portfolio!\n Failed To Sell");
+                TransactionLog.EnterLog("Transaction Failed");
                 return;
             }
-            Stocks[Symbol].NoOfShares -= amount;
+            Stocks[symbol].NoOfShares -= amount;
             Console.WriteLine("Sold Successfully!");
-            CompanyList.companyList[Symbol].NoOfShares += amount;
+            CompanyList.companyList[symbol].NoOfShares += amount;
+            TransactionLog.EnterLog($"Sold {amount} shares of {symbol} from {AccountName}'s account");
         }
         else
+        {
             Console.WriteLine("This portfolio does not have the stock to sell!");
+            TransactionLog.EnterLog("Transaction Failed");
+        }
     }
 }
 

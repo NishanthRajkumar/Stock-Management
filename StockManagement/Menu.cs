@@ -37,6 +37,7 @@ public static class Menu
                     break;
                 case 4:
                     CompanyList.SaveFile();
+                    TransactionLog.SaveToFile();
                     Console.WriteLine("Exiting...");
                     break;
                 default:
