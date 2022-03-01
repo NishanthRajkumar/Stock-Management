@@ -26,8 +26,10 @@ public class QueueList<T> : MyLinkedList<T> where T : IComparable
     /// <summary>
     /// Deletes first element in queue.
     /// </summary>
-    public void Dequeue()
+    public T Dequeue()
     {
+        T data = head.data;
         base.Pop();
+        return data;
     }
 }
