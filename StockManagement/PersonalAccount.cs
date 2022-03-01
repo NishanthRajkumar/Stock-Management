@@ -22,10 +22,11 @@ internal static class PersonalAccount
             Console.WriteLine($"----------Personal Account [{name}]----------");
             Console.WriteLine("Menu Otions:");
             Console.WriteLine("1. Buy a Stock");
-            Console.WriteLine("2. Get total Stock value");
-            Console.WriteLine("3. Display a stock of yours");
-            Console.WriteLine("4. Display all your stocks");
-            Console.WriteLine("5. Exit");
+            Console.WriteLine("2. Sell a Stock");
+            Console.WriteLine("3. Get total Stock value");
+            Console.WriteLine("4. Display a stock of yours");
+            Console.WriteLine("5. Display all your stocks");
+            Console.WriteLine("6. Exit");
             option = UserInput.GetPositiveInt("Enter Option: ");
             Console.Clear();
             switch (option)
@@ -34,15 +35,18 @@ internal static class PersonalAccount
                     myPortfolio.Buy();
                     break;
                 case 2:
-                    Console.WriteLine("Total Value of portflolio: " + myPortfolio.ValueOfPortfolio());
+                    myPortfolio.Sell();
                     break;
                 case 3:
-                    myPortfolio.DisplayStock();
+                    Console.WriteLine("Total Value of portflolio: " + myPortfolio.ValueOfPortfolio());
                     break;
                 case 4:
-                    myPortfolio.PortfolioReport();
+                    myPortfolio.DisplayStock();
                     break;
                 case 5:
+                    myPortfolio.PortfolioReport();
+                    break;
+                case 6:
                     myPortfolio.SaveToFile();
                     Console.WriteLine("Exiting...");
                     break;
@@ -50,11 +54,11 @@ internal static class PersonalAccount
                     Console.WriteLine("Invalid Option!!!");
                     break;
             }
-            if (option == 5)
+            if (option == 6)
                 break;
             Console.WriteLine("Press Any Key to Conitnue...");
             Console.ReadKey();
             Console.Clear();
-        } while (option != 5);
+        } while (option != 6);
     }
 }
