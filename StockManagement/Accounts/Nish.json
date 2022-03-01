@@ -28,6 +28,13 @@
       "NoOfShares": 28,
       "SharePrice": 1500,
       "StockValue": 42000
+    },
+    "KO": {
+      "StockName": "Coca-Cola",
+      "StockSymbol": "KO",
+      "NoOfShares": 29,
+      "SharePrice": 2000,
+      "StockValue": 58000
     }
   }
 }

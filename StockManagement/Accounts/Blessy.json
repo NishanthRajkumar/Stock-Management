@@ -4,9 +4,9 @@
     "TSLA": {
       "StockName": "Tesla",
       "StockSymbol": "TSLA",
-      "NoOfShares": 300,
+      "NoOfShares": 111,
       "SharePrice": 1500,
-      "StockValue": 450000
+      "StockValue": 166500
     },
     "KO": {
       "StockName": "Coca-Cola",
@@ -15,12 +15,19 @@
       "SharePrice": 2000,
       "StockValue": 56000
     },
-    "AAPl": {
+    "AAPL": {
       "StockName": "Apple",
       "StockSymbol": "AAPL",
-      "NoOfShares": 26,
+      "NoOfShares": 18,
       "SharePrice": 2800,
-      "StockValue": 72800
+      "StockValue": 50400
+    },
+    "NVDA": {
+      "StockName": "Nvidia",
+      "StockSymbol": "NVDA",
+      "NoOfShares": 10,
+      "SharePrice": 1200,
+      "StockValue": 12000
     }
   }
 }

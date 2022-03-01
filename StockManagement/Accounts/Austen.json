@@ -4,9 +4,30 @@
     "INFY": {
       "StockName": "Infosys",
       "StockSymbol": "INFY",
-      "NoOfShares": 200,
+      "NoOfShares": 50,
       "SharePrice": 1500,
-      "StockValue": 300000
+      "StockValue": 75000
+    },
+    "FB": {
+      "StockName": "Meta",
+      "StockSymbol": "FB",
+      "NoOfShares": 30,
+      "SharePrice": 2500,
+      "StockValue": 75000
+    },
+    "AMZN": {
+      "StockName": "Amazon",
+      "StockSymbol": "AMZN",
+      "NoOfShares": 30,
+      "SharePrice": 4000,
+      "StockValue": 120000
+    },
+    "GOOG": {
+      "StockName": "Alphabet",
+      "StockSymbol": "GOOG",
+      "NoOfShares": 7,
+      "SharePrice": 2600,
+      "StockValue": 18200
     }
   }
 }

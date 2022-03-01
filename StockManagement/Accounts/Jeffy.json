@@ -4,9 +4,9 @@
     "TT": {
       "StockName": "Tata",
       "StockSymbol": "TT",
-      "NoOfShares": 400,
+      "NoOfShares": 123,
       "SharePrice": 1600,
-      "StockValue": 640000
+      "StockValue": 196800
     },
     "INFY": {
       "StockName": "Infosys",
@@ -21,6 +21,13 @@
       "NoOfShares": 15,
       "SharePrice": 1200,
       "StockValue": 18000
+    },
+    "TSLA": {
+      "StockName": "Tesla",
+      "StockSymbol": "TSLA",
+      "NoOfShares": 21,
+      "SharePrice": 1500,
+      "StockValue": 31500
     }
   }
 }
