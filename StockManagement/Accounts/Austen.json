@@ -1,0 +1,12 @@
+{
+  "AccountName": "Austen",
+  "Stocks": {
+    "INFY": {
+      "StockName": "Infosys",
+      "StockSymbol": "INFY",
+      "NoOfShares": 200,
+      "SharePrice": 1500,
+      "StockValue": 300000
+    }
+  }
+}

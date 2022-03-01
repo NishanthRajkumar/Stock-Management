@@ -1,0 +1,33 @@
+{
+  "AccountName": "Nish",
+  "Stocks": {
+    "AMZN": {
+      "StockName": "Amazon",
+      "StockSymbol": "AMZN",
+      "NoOfShares": 120,
+      "SharePrice": 4000,
+      "StockValue": 480000
+    },
+    "GOOG": {
+      "StockName": "Alphabet",
+      "StockSymbol": "GOOG",
+      "NoOfShares": 35,
+      "SharePrice": 2600,
+      "StockValue": 91000
+    },
+    "MSFT": {
+      "StockName": "Microsoft",
+      "StockSymbol": "MSFT",
+      "NoOfShares": 850,
+      "SharePrice": 3000,
+      "StockValue": 2550000
+    },
+    "TSLA": {
+      "StockName": "Tesla",
+      "StockSymbol": "TSLA",
+      "NoOfShares": 28,
+      "SharePrice": 1500,
+      "StockValue": 42000
+    }
+  }
+}

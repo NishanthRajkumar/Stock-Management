@@ -1,52 +1,84 @@
 ﻿namespace StockManagement;
 
-internal static class Menu
+/// <summary>
+/// This class is the entry point of the stock management app
+/// </summary>
+public static class Menu
 {
-    public static void List()
+    // Path where the account files are stored
+    public const string PATH = @"C:\Users\Nishanth\Desktop\codingclub\RFP\Assignments\StockManagement\StockManagement\Accounts\";
+
+    /// <summary>
+    /// Main menu of the Stock management system
+    /// </summary>
+    public static void MainMenu()
     {
         int option;
-        StockPortfolio myPortfolio = new StockPortfolio();
         do
         {
-            Console.WriteLine("----------Stock Portfolio----------");
+            Console.WriteLine("----------Stock Management System----------");
             Console.WriteLine("Menu Otions:");
-            Console.WriteLine("1. Add Stock");
-            Console.WriteLine("2. Add Multiple stocks");
-            Console.WriteLine("3. Get total Stock value");
-            Console.WriteLine("4. Display a stock");
-            Console.WriteLine("5. Display all stocks");
-            Console.WriteLine("6. Exit");
+            Console.WriteLine("1. Commercial Account");
+            Console.WriteLine("2. New Personal Account");
+            Console.WriteLine("3. Existing Personal Account");
+            Console.WriteLine("4. Exit");
             option = UserInput.GetPositiveInt("Enter Option: ");
             Console.Clear();
             switch (option)
             {
                 case 1:
-                    myPortfolio.AddStock();
+                    CommercialAccount.MainMenu();
                     break;
                 case 2:
-                    myPortfolio.AddMultipleStocks();
+                    NewPersonal();
                     break;
                 case 3:
-                    Console.WriteLine("Total Value of portflolio: " + myPortfolio.TotalValue);
+                    ExistingPersonal();
                     break;
                 case 4:
-                    myPortfolio.DisplayStock();
-                    break;
-                case 5:
-                    myPortfolio.PortfolioReport();
-                    break;
-                case 6:
-                    Console.WriteLine();
+                    CompanyList.SaveFile();
+                    Console.WriteLine("Exiting...");
                     break;
                 default:
                     Console.WriteLine("Invalid Option!!!");
                     break;
             }
-            if (option == 6)
+            if (option == 4)
                 break;
             Console.WriteLine("Press Any Key to Conitnue...");
             Console.ReadKey();
             Console.Clear();
-        } while (option != 6);
+        } while (option != 4);
+    }
+
+    /// <summary>
+    /// Opens an existing account file
+    /// </summary>
+    private static void ExistingPersonal()
+    {
+        string name = UserInput.GetName("Enter Name of account: ");
+        if (File.Exists(PATH + name + ".json"))
+            PersonalAccount.MainMenu(name);
+        else
+            Console.WriteLine("Account does not exist");
+    }
+
+    /// <summary>
+    /// Creates new personal account file.
+    /// </summary>
+    private static void NewPersonal()
+    {
+        string name;
+        while (true)
+        {
+            name = UserInput.GetName("Enter Name of account to create: ");
+            if (File.Exists(PATH + name + ".json"))
+                Console.WriteLine("Account Name already exists");
+            else
+                break;
+        }
+        StockPortfolio newAccount = new(name);
+        newAccount.SaveToFile();
+        PersonalAccount.MainMenu(name);
     }
 }

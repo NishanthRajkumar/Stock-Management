@@ -1,0 +1,26 @@
+{
+  "AccountName": "Blessy",
+  "Stocks": {
+    "TSLA": {
+      "StockName": "Tesla",
+      "StockSymbol": "TSLA",
+      "NoOfShares": 300,
+      "SharePrice": 1500,
+      "StockValue": 450000
+    },
+    "KO": {
+      "StockName": "Coca-Cola",
+      "StockSymbol": "KO",
+      "NoOfShares": 28,
+      "SharePrice": 2000,
+      "StockValue": 56000
+    },
+    "AAPl": {
+      "StockName": "Apple",
+      "StockSymbol": "AAPL",
+      "NoOfShares": 26,
+      "SharePrice": 2800,
+      "StockValue": 72800
+    }
+  }
+}

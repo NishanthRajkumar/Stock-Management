@@ -1,0 +1,26 @@
+{
+  "AccountName": "Jeffy",
+  "Stocks": {
+    "TT": {
+      "StockName": "Tata",
+      "StockSymbol": "TT",
+      "NoOfShares": 400,
+      "SharePrice": 1600,
+      "StockValue": 640000
+    },
+    "INFY": {
+      "StockName": "Infosys",
+      "StockSymbol": "INFY",
+      "NoOfShares": 24,
+      "SharePrice": 1500,
+      "StockValue": 36000
+    },
+    "NVDA": {
+      "StockName": "Nvidia",
+      "StockSymbol": "NVDA",
+      "NoOfShares": 15,
+      "SharePrice": 1200,
+      "StockValue": 18000
+    }
+  }
+}

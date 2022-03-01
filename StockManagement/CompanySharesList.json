@@ -1,0 +1,62 @@
+{
+  "INFY": {
+    "Name": "Infosys",
+    "Symbol": "INFY",
+    "NoOfShares": 999776,
+    "SharePrice": 1500
+  },
+  "TT": {
+    "Name": "Tata",
+    "Symbol": "TT",
+    "NoOfShares": 999600,
+    "SharePrice": 1600
+  },
+  "FB": {
+    "Name": "Meta",
+    "Symbol": "FB",
+    "NoOfShares": 1000000,
+    "SharePrice": 2500
+  },
+  "GOOG": {
+    "Name": "Alphabet",
+    "Symbol": "GOOG",
+    "NoOfShares": 999965,
+    "SharePrice": 2600
+  },
+  "AAPL": {
+    "Name": "Apple",
+    "Symbol": "AAPL",
+    "NoOfShares": 999974,
+    "SharePrice": 2800
+  },
+  "MSFT": {
+    "Name": "Microsoft",
+    "Symbol": "MSFT",
+    "NoOfShares": 999150,
+    "SharePrice": 3000
+  },
+  "AMZN": {
+    "Name": "Amazon",
+    "Symbol": "AMZN",
+    "NoOfShares": 999880,
+    "SharePrice": 4000
+  },
+  "TSLA": {
+    "Name": "Tesla",
+    "Symbol": "TSLA",
+    "NoOfShares": 999672,
+    "SharePrice": 1500
+  },
+  "NVDA": {
+    "Name": "Nvidia",
+    "Symbol": "NVDA",
+    "NoOfShares": 999985,
+    "SharePrice": 1200
+  },
+  "KO": {
+    "Name": "Coca-Cola",
+    "Symbol": "KO",
+    "NoOfShares": 999972,
+    "SharePrice": 2000
+  }
+}

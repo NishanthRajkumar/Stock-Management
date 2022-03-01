@@ -2,4 +2,4 @@
 
 Console.Title = "Stock Management App";
 
-Menu.List();
+Menu.MainMenu();

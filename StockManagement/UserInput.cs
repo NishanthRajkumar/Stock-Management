@@ -1,7 +1,7 @@
 ﻿namespace StockManagement;
 
 /// <summary>
-/// This class is used for input checks when entering contact info
+/// This class is used for input checks when entering info
 /// </summary>
 internal static class UserInput
 {
